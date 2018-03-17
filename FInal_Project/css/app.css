@@ -1,0 +1,56 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo-orange {
+    color: rgb(237, 104, 49);
+    font-size: 22px;
+}
+
+nav a:link,
+nav a:visited {
+    color: rgb(87, 87, 87);
+    font-size: 19px;
+}
+
+nav a:hover {
+    color: rgb(237, 104, 49);
+    text-decoration: underline;
+    font-size: 19px;
+    transition: color 200ms ease-out;
+}
+
+a:link,
+a:visited {
+    color: #fff;
+}
+
+.selected {
+    color: rgb(237, 104, 49);
+}
+
+.notice {
+    font-size: 13px;
+    color: darkred;
+}
+
+/*swap navbars between desktop and mobile*/
+@media screen and (max-width: 860px){
+    nav {
+        position: absolute;
+        top: -500px;
+    }
+}
+
+@media screen and (min-width: 860px){
+    navMobile {
+        position: absolute;
+        top: -500px;
+    }
+}
