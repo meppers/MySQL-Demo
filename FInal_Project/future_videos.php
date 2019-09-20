@@ -9,22 +9,24 @@ $conn = dbConnect();
 ?>
 <!docType HTML>
 <html>
+
 <head>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Timeline</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
 </head>
+
 <body>
 
 
-<?php include("nav.php"); ?>
+    <?php include("nav.php"); ?>
 
-<h1>What we're working on</h1><br>
+    <h1>What we're working on</h1><br>
 
-<?php
+    <?php
 //this page is what the user will see, selecting which entry to edit as an admin is done on another page
 
 //display the current projects in the database
@@ -57,15 +59,16 @@ if ($stmt->prepare($sql)) {
 }
 ?>
 
-<form action="future_videos_login.php" method="POST">
-    <div class="row">
-        <div class="small-4 columns"><input type="password" name="password" size="30" placeholder="Enter password here"></div>
-        <div class="small-1 columns"><input type="submit" name="submit" class="hollow button" value="Go"></div>
-        <div class="small-7 columns notice">The password is "password", please be nice :^)</div>
-    </div>
-</form>
+    <form action="future_videos_login.php" method="POST">
+        <div class="row">
+            <div class="small-4 columns"><input type="password" name="password" size="30" placeholder="Enter password here"></div>
+            <div class="small-1 columns"><input type="submit" name="submit" class="hollow button" value="Go"></div>
+            <div class="small-7 columns notice">The password is "password", please log in and check out the admin tools!</div>
+        </div>
+    </form>
 
 
 
 </body>
+
 </html>

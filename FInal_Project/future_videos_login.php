@@ -2,7 +2,7 @@
 session_start();
 ?>
 <?php
-$password = "password"; // yeah yeah, i know this is improper password handling, that's not the point of this demo site.
+$password = "password"; // I will NEVER handle real passwords like this. The point of this site is to show how to display and modify a MySQL database, not how to store and use passwords securely, so I wont waste time and code on that.
 
 // check if the user came here from the proper link
 if (isset($_POST['submit'])) {
@@ -30,4 +30,3 @@ if (isset($_POST['submit'])) {
 }
 
 ?>
-
